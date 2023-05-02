@@ -6,7 +6,7 @@ function MemoryCardsApp() {
   const [score, setScore] = useState(0)
   const [record, setRecord] = useState(0)
   const [usedCards, setUsedCards] = useState([])
-  const [cards, setCards] = useState(pastaCardInfo.slice())
+  const [cards, setCards] = useState(pastaCardInfoEasyMode.slice())
   const [isGameFinished, setIsGameFinished] = useState(false)
 
   //Callbacks
@@ -17,7 +17,30 @@ function MemoryCardsApp() {
   }
 
   function handleCardClick(event) {
-    console.log("Card clicked")
+    function finishGame(finalScore) {
+      if (finalScore > record) {
+        setRecord(finalScore)
+      }
+      setIsGameFinished(true)
+    }
+
+    const pastaName = event.currentTarget.getAttribute("data-name")
+    
+    //If you clicked a card that has already been clicked, game over
+    if (usedCards.find((c) => c === pastaName) !== undefined) {
+      finishGame(score)
+      return
+    }
+    
+    const nextScore = score + 1
+    setScore(nextScore)
+    setUsedCards(usedCards.concat([pastaName]))
+    
+    //If all cards clicked, you win
+    if (nextScore >= cards.length) {
+      finishGame(nextScore)
+      return
+    }
   }
   
   //Rendering
@@ -58,6 +81,11 @@ const pastaCardInfo = [
   {name: "penne", id: 6},      {name: "rigatoni", id: 7},
   {name: "tortellini", id: 8}, {name: "cavatappi", id: 9},
   {name: "farfalle", id: 10},  {name: "gnocci", id: 11}
+]
+
+const pastaCardInfoEasyMode = [
+  {name: "spaghetti", id: 0},  {name: "fettuccine", id: 1},
+  {name: "lasagna", id: 2}
 ]
 
 export default MemoryCardsApp
