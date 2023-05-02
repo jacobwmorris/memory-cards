@@ -17,9 +17,9 @@ function Scoreboard({score, record, isGameFinished, isPerfectScore, handleReset}
 
 function endMessage(isPerfectScore) {
   if (isPerfectScore) {
-    return <p>Congratulations, you got a perfect score!</p>
+    return "Congratulations, you got a perfect score!"
   }
-  return <p>Game over!</p>
+  return "Game over!"
 }
 
 export default Scoreboard

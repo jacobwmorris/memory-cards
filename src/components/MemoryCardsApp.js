@@ -7,14 +7,13 @@ function MemoryCardsApp() {
   const [record, setRecord] = useState(0)
   const [usedCards, setUsedCards] = useState([])
   const [cards, setCards] = useState(pastaCardInfo.slice())
-  const [isGameFinished, setIsGameFinished] = useState(true)
+  const [isGameFinished, setIsGameFinished] = useState(false)
 
   //Callbacks
   function handleReset(event) {
     setScore(0)
     setUsedCards([])
     setIsGameFinished(false)
-    //shuffle cards
   }
   
   //Rendering
