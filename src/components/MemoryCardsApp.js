@@ -15,6 +15,10 @@ function MemoryCardsApp() {
     setUsedCards([])
     setIsGameFinished(false)
   }
+
+  function handleCardClick(event) {
+    console.log("Card clicked")
+  }
   
   //Rendering
   const isPerfectScore = (score === cards.length)
@@ -38,7 +42,11 @@ function MemoryCardsApp() {
           handleReset={handleReset}
         />
       </div>
-      <CardRandomizer/>
+      <CardRandomizer
+        cardList={cards}
+        isGameFinished={isGameFinished}
+        handleCardClick={handleCardClick}
+      />
     </div>
   )
 }
