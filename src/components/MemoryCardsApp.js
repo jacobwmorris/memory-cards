@@ -6,7 +6,7 @@ function MemoryCardsApp() {
   const [score, setScore] = useState(0)
   const [record, setRecord] = useState(0)
   const [usedCards, setUsedCards] = useState([])
-  const [cards, setCards] = useState(pastaCardInfoEasyMode.slice())
+  const [cards, setCards] = useState(pastaCardInfo.slice())
   const [isGameFinished, setIsGameFinished] = useState(false)
 
   //Callbacks
@@ -80,7 +80,7 @@ const pastaCardInfo = [
   {name: "macaroni", id: 4},   {name: "ravioli", id: 5},
   {name: "penne", id: 6},      {name: "rigatoni", id: 7},
   {name: "tortellini", id: 8}, {name: "cavatappi", id: 9},
-  {name: "farfalle", id: 10},  {name: "gnocci", id: 11}
+  {name: "farfalle", id: 10},  {name: "gnocchi", id: 11}
 ]
 
 const pastaCardInfoEasyMode = [
