@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Bree Serif';
+  src: url('./fonts/Bree_Serif/BreeSerif-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Satisfy';
+  src: url('./fonts/Satisfy/Satisfy-Regular.ttf') format('truetype');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +15,7 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Bree Serif', serif;
   background-image: url("./images/woodbg.png");
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
