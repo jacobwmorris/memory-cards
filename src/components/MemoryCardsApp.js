@@ -1,6 +1,7 @@
 import {useState} from "react"
 import Scoreboard from "./Scoreboard"
 import CardRandomizer from "./CardRandomizer"
+import "../styles/MemoryCardsApp.css"
 
 function MemoryCardsApp() {
   const [score, setScore] = useState(0)
@@ -47,12 +48,12 @@ function MemoryCardsApp() {
   const isPerfectScore = (score === cards.length)
 
   return (
-    <div>
-      <div>
+    <div className="MemoryCardsApp-body">
+      <div className="MemoryCardsApp-title-flexbox MemoryCardsApp-darktext">
         <div>
-          <h1>Memory Cards</h1>
-          <h2>Pasta edition</h2>
-          <ul>
+          <h1 className="MemoryCardsApp-title">Memory Cards</h1>
+          <h2 className="MemoryCardsApp-subtitle">Pasta edition</h2>
+          <ul className="MemoryCardsApp-list">
             <li>Click on the pasta cards below to gain points.</li>
             <li>Remember each card you click, and don't click the same one twice!</li>
           </ul>

@@ -1,0 +1,35 @@
+
+.MemoryCardsApp-body {
+    margin: 0 5rem;
+    padding: 2rem 5rem;
+    background-color: #ef915160;
+}
+
+.MemoryCardsApp-title-flexbox {
+    border: 4px solid #6d4225;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 10px #352012;
+    padding: 1rem;
+    background-color: #ffdb6b;
+    display: flex;
+    gap: 2rem;
+}
+
+.MemoryCardsApp-darktext {
+    color: #352012;
+}
+
+.MemoryCardsApp-title {
+    margin: 0;
+}
+
+.MemoryCardsApp-subtitle {
+    margin: 0;
+    color: #6d4225;
+}
+
+.MemoryCardsApp-list {
+    padding: 0;
+    list-style-type: none;
+}
