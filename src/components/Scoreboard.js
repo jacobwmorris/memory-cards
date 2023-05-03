@@ -1,14 +1,15 @@
+import "../styles/Scoreboard.css"
 
 function Scoreboard({score, record, isGameFinished, isPerfectScore, handleReset}) {
   return (
-    <div>
-      <p>Score: {score}</p>
-      <p>Record: {record}</p>
+    <div className="Scoreboard-body">
+      <p className="Scoreboard-score">Score: {score}</p>
+      <p className="Scoreboard-record">Record: {record}</p>
       {
         isGameFinished ? (
         <>
-          <p>{endMessage(isPerfectScore)}</p>
-          <button type="button" onClick={handleReset}>Restart</button>
+          <p className="Scoreboard-endmessage">{endMessage(isPerfectScore)}</p>
+          <button type="button" onClick={handleReset} className="Scoreboard-restart">Restart</button>
         </>) : null
       }
     </div>
