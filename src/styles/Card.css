@@ -1,0 +1,31 @@
+
+.Card-button {
+    border: 4px solid #4f1d17;
+    border-radius: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4f1d17;
+    background-color: #ff5e4b;
+    overflow: hidden;
+}
+
+.Card-button:hover:not(:disabled) {
+    text-decoration: underline;
+    background-color: #ff1b00;
+}
+
+.Card-button:disabled {
+    color: #4f3937;
+    border-color: #4f3937;
+    background-color: #ffb4ab;
+}
+
+.Card-name {
+    padding: 0.5rem;
+}
+
+.Card-picture {
+    border-top: 4px solid #4f1d17;
+    position: relative;
+    top: 0.3rem;
+}

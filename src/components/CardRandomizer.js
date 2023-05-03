@@ -1,4 +1,5 @@
 import Card from "./Card"
+import "../styles/CardRandomizer.css"
 
 function CardRandomizer({cardList, isGameFinished, handleCardClick}) {
   const cardsRendered = shuffle(cardList).map((card) => {
@@ -6,7 +7,7 @@ function CardRandomizer({cardList, isGameFinished, handleCardClick}) {
   })
 
   return (
-    <div>
+    <div className="CardRandomizer-body">
       {cardsRendered}
     </div>
   )

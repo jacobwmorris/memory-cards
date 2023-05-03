@@ -10,6 +10,7 @@ import rigatoni from "../images/rigatoni-s.jpg"
 import spaghetti from "../images/spaghetti-s.jpg"
 import tortellini from "../images/tortellini-s.jpg"
 import ziti from "../images/ziti-s.jpg"
+import "../styles/Card.css"
 
 const pastaPics = {
   cavatappi, farfalle, fettuccine, 
@@ -20,9 +21,9 @@ const pastaPics = {
 
 function Card({name, disabled, onClick}) {
   return (
-    <button type="button" disabled={disabled} onClick={onClick} data-name={name}>
-      <p>{name}</p>
-      <img src={pastaPics[name]} alt={name}></img>
+    <button type="button" disabled={disabled} onClick={onClick} data-name={name} className="Card-button">
+      <p className="Card-name">{name}</p>
+      <img src={pastaPics[name]} alt={name} className="Card-picture"></img>
     </button>
   )
 }
