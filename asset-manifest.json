@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/memory-cards/static/css/main.d52188f6.css",
+    "main.js": "/memory-cards/static/js/main.6e8bcf24.js",
+    "static/media/woodbg.png": "/memory-cards/static/media/woodbg.c701e916477c4c2d171a.png",
+    "static/media/Satisfy-Regular.ttf": "/memory-cards/static/media/Satisfy-Regular.a4b39cd97bba6a974c85.ttf",
+    "static/media/farfalle-s.jpg": "/memory-cards/static/media/farfalle-s.2801234b5c4e6bcdfe7f.jpg",
+    "static/media/BreeSerif-Regular.ttf": "/memory-cards/static/media/BreeSerif-Regular.394d00c6f1675079a1a9.ttf",
+    "static/media/lasagna-s.jpg": "/memory-cards/static/media/lasagna-s.6424945dfda13821b4b2.jpg",
+    "static/media/cavatappi-s.jpg": "/memory-cards/static/media/cavatappi-s.e7c4d93b213b3988476a.jpg",
+    "static/media/ravioli-s.jpg": "/memory-cards/static/media/ravioli-s.da9ec4d0ff01cdb51c1f.jpg",
+    "static/media/penne-s.jpg": "/memory-cards/static/media/penne-s.01932e226e5bcc3bf45a.jpg",
+    "static/media/tortellini-s.jpg": "/memory-cards/static/media/tortellini-s.8977d26b1d8d052aec08.jpg",
+    "static/media/gnocchi-s.jpg": "/memory-cards/static/media/gnocchi-s.877b94b3037e3477a524.jpg",
+    "static/media/spaghetti-s.jpg": "/memory-cards/static/media/spaghetti-s.80832f49bcf8f08b096f.jpg",
+    "static/media/macaroni-s.jpg": "/memory-cards/static/media/macaroni-s.a0813f5d1c8259f0598a.jpg",
+    "static/media/fettuccine-s.jpg": "/memory-cards/static/media/fettuccine-s.15925fd4486c6f6811ec.jpg",
+    "static/media/rigatoni-s.jpg": "/memory-cards/static/media/rigatoni-s.e5db9e22f35b6b1d7955.jpg",
+    "static/media/ziti-s.jpg": "/memory-cards/static/media/ziti-s.57b02f025df63ca54bee.jpg",
+    "index.html": "/memory-cards/index.html",
+    "main.d52188f6.css.map": "/memory-cards/static/css/main.d52188f6.css.map",
+    "main.6e8bcf24.js.map": "/memory-cards/static/js/main.6e8bcf24.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d52188f6.css",
+    "static/js/main.6e8bcf24.js"
+  ]
+}
